@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_black"
+            android:title="@string/navigation_drawer_int_card" />
+        <item
+            android:id="@+id/nav_sdcard"
+            android:icon="@drawable/sd_card_black"
+            android:title="@string/navigation_drawer_ext_card" />
+    </group>
+
+
+
+</menu>

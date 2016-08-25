@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical"
+    android:weightSum="20"
+    android:backgroundTint="@color/foreground_material_dark"
+    android:paddingTop="10dp">
+
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainGridView"
+        android:layout_weight="18"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_above="@+id/selectAllLayout_grid"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:background="@color/displayAreaColor"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/selectAllLayout_grid"
+        android:gravity="left|bottom"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select all"
+            android:id="@+id/selectAll_grid"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="20dp"
+            android:gravity="left|center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+</RelativeLayout>
